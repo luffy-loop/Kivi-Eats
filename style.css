@@ -1,6 +1,4 @@
-/* =========================
-   GLOBAL
-========================= */
+
 * {
     margin: 0;
     padding: 0;
@@ -20,9 +18,6 @@ body {
     to { opacity: 1; }
 }
 
-/* =========================
-   NAVBAR
-========================= */
 .navbar {
     display: flex;
     justify-content: space-between;
@@ -46,10 +41,6 @@ body {
 .navbar a:hover {
     color: #111;
 }
-
-/* =========================
-   HERO (WITH IMAGE)
-========================= */
 .hero {
     height: 80vh;
     background: url('https://images.unsplash.com/photo-1504674900247-0877df9cc836') center/cover no-repeat;
@@ -99,10 +90,6 @@ body {
 .btn:active {
     transform: scale(0.97);
 }
-
-/* =========================
-   STATS
-========================= */
 .stats {
     display: flex;
     justify-content: center;
@@ -122,10 +109,6 @@ body {
 .stats p {
     color: #777;
 }
-
-/* =========================
-   MENU LAYOUT
-========================= */
 .app-layout {
     display: grid;
     grid-template-columns: 200px 1fr 300px;
@@ -177,9 +160,6 @@ body {
     padding-left: 10px;
 }
 
-/* =========================
-   CART PANEL
-========================= */
 .cart-panel {
     border-left: 1px solid #eee;
     padding: 20px;
@@ -196,11 +176,6 @@ body {
 .cart-item:hover {
     transform: scale(1.02);
 }
-
-/* =========================
-   BUTTONS (+ -)
-========================= */
-.qty-btn {
     padding: 3px 10px;
     margin: 0 5px;
     border: 1px solid #ddd;
@@ -240,9 +215,6 @@ body {
     transform: scale(0.97);
 }
 
-/* =========================
-   LOADER
-========================= */
 .loader {
     position: fixed;
     inset: 0;
@@ -265,10 +237,6 @@ body {
 @keyframes spin {
     to { transform: rotate(360deg); }
 }
-
-/* =========================
-   TOAST
-========================= */
 .toast {
     position: fixed;
     bottom: 20px;
@@ -286,9 +254,6 @@ body {
     transform: translateY(0);
 }
 
-/* =========================
-   SCROLLBAR
-========================= */
 ::-webkit-scrollbar {
     width: 6px;
 }
@@ -297,20 +262,12 @@ body {
     background: #ddd;
     border-radius: 10px;
 }
-
-/* =========================
-   FOOTER
-========================= */
 footer {
     text-align: center;
     padding: 15px;
     background: #111;
     color: white;
 }
-
-/* =========================
-   MOBILE
-========================= */
 @media (max-width: 900px) {
     .app-layout {
         grid-template-columns: 1fr;
