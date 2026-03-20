@@ -1,129 +1,35 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Menu</title>
-    <link rel="stylesheet" href="style.css">
+<title>Kivi Eats</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<h1 class="menu-title">Our Menu</h1>
+<header class="navbar">
+    <h1>Kivi Eats</h1>
+</header>
 
-<!-- CATEGORY BAR -->
-<section class="category-bar">
-    <a href="#breakfast">Breakfast</a>
-    <a href="#lunch">Lunch</a>
-    <a href="#dinner">Dinner</a>
-    <a href="#drinks">Drinks</a>
-    <a href="#desserts">Desserts</a>
-</section>
+<div class="app-layout">
 
-<!-- BREAKFAST -->
-<div class="menu-section" id="breakfast">
-    <h2>Breakfast</h2>
-    <div class="horizontal-scroll">
+    <div class="sidebar" id="categoryList"></div>
 
-        <div class="food-card"><h3>Dosa</h3><p>₹40</p></div>
-        <div class="food-card"><h3>Masala Dosa</h3><p>₹60</p></div>
-        <div class="food-card"><h3>Idli (2 pcs)</h3><p>₹30</p></div>
-        <div class="food-card"><h3>Medu Vada</h3><p>₹25</p></div>
-        <div class="food-card"><h3>Poori Bhaji</h3><p>₹50</p></div>
-        <div class="food-card"><h3>Upma</h3><p>₹35</p></div>
-        <div class="food-card"><h3>Pongal</h3><p>₹45</p></div>
-
+    <div class="menu-area">
+        <input type="text" id="search" placeholder="Search food...">
+        <div id="menuContainer"></div>
     </div>
+
+    <div class="cart-panel">
+        <h2>Cart</h2>
+        <div id="cartItems"></div>
+        <h3 id="totalPrice">Total: ₹0</h3>
+        <button id="checkoutBtn">Checkout</button>
+    </div>
+
 </div>
 
-<!-- LUNCH VEG -->
-<div class="menu-section" id="lunch">
-    <h2>Lunch (Veg)</h2>
-    <div class="horizontal-scroll">
-
-        <div class="food-card"><h3>Veg Meals</h3><p>₹120</p></div>
-        <div class="food-card"><h3>Paneer Butter Masala</h3><p>₹150</p></div>
-        <div class="food-card"><h3>Dal Tadka</h3><p>₹90</p></div>
-        <div class="food-card"><h3>Veg Biryani</h3><p>₹130</p></div>
-        <div class="food-card"><h3>Jeera Rice</h3><p>₹80</p></div>
-        <div class="food-card"><h3>Curd Rice</h3><p>₹60</p></div>
-
-    </div>
-</div>
-
-<!-- LUNCH NON-VEG -->
-<div class="menu-section">
-    <h2>Lunch (Non-Veg)</h2>
-    <div class="horizontal-scroll">
-
-        <div class="food-card"><h3>Chicken Biryani</h3><p>₹200</p></div>
-        <div class="food-card"><h3>Chicken Curry</h3><p>₹180</p></div>
-        <div class="food-card"><h3>Butter Chicken</h3><p>₹220</p></div>
-        <div class="food-card"><h3>Egg Curry</h3><p>₹120</p></div>
-
-    </div>
-</div>
-
-<!-- ROTIS -->
-<div class="menu-section">
-    <h2>Rotis & Parathas</h2>
-    <div class="horizontal-scroll">
-
-        <div class="food-card"><h3>Chapati</h3><p>₹10</p></div>
-        <div class="food-card"><h3>Butter Roti</h3><p>₹20</p></div>
-        <div class="food-card"><h3>Aloo Paratha</h3><p>₹40</p></div>
-        <div class="food-card"><h3>Paneer Paratha</h3><p>₹60</p></div>
-
-    </div>
-</div>
-
-<!-- DINNER -->
-<div class="menu-section" id="dinner">
-    <h2>Dinner (Light)</h2>
-    <div class="horizontal-scroll">
-
-        <div class="food-card"><h3>Lemon Rice</h3><p>₹50</p></div>
-        <div class="food-card"><h3>Curd Rice Bowl</h3><p>₹60</p></div>
-        <div class="food-card"><h3>Vegetable Khichdi</h3><p>₹80</p></div>
-        <div class="food-card"><h3>Tomato Rice</h3><p>₹55</p></div>
-
-    </div>
-</div>
-
-<!-- DRINKS -->
-<div class="menu-section" id="drinks">
-    <h2>Drinks</h2>
-    <div class="horizontal-scroll">
-
-        <div class="food-card"><h3>Masala Buttermilk</h3><p>₹20</p></div>
-        <div class="food-card"><h3>Cold Coffee</h3><p>₹90</p></div>
-        <div class="food-card"><h3>Lime Soda</h3><p>₹40</p></div>
-        <div class="food-card"><h3>Mojito</h3><p>₹70</p></div>
-
-    </div>
-</div>
-
-<!-- DESSERTS -->
-<div class="menu-section" id="desserts">
-    <h2>Desserts</h2>
-    <div class="horizontal-scroll">
-
-        <div class="food-card"><h3>Gulab Jamun</h3><p>₹40</p></div>
-        <div class="food-card"><h3>Ice Cream</h3><p>₹60</p></div>
-        <div class="food-card"><h3>Chocolate Brownie</h3><p>₹80</p></div>
-        <div class="food-card"><h3>Rasgulla</h3><p>₹50</p></div>
-
-    </div>
-</div>
-
-<!-- SANDWICH -->
-<div class="menu-section">
-    <h2>Sandwiches</h2>
-    <div class="horizontal-scroll">
-
-        <div class="food-card"><h3>Veg Sandwich</h3><p>₹50</p></div>
-        <div class="food-card"><h3>Grilled Cheese</h3><p>₹70</p></div>
-        <div class="food-card"><h3>Chicken Sandwich</h3><p>₹90</p></div>
-
-    </div>
-</div>
-
+<script src="menuData.js"></script>
+<script src="script.js"></script>
 </body>
 </html>
