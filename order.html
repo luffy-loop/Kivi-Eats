@@ -1,41 +1,21 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 <head>
-    <title>Order</title>
-    <link rel="stylesheet" href="style.css">
+<title>Your Cart</title>
+<link rel="stylesheet" href="style.css">
 </head>
+
 <body>
 
-<div class="order-container">
-    <h1>Place Your Order</h1>
+<header class="navbar">
+    <h1>Your Order</h1>
+</header>
 
-    <form id="orderForm">
-        <input type="text" id="name" placeholder="Enter your name" required>
+<div id="cartContainer"></div>
 
-        <select id="item" required></select>
+<h2 id="total"></h2>
 
-        <input type="number" id="qty" placeholder="Quantity" min="1" required>
-
-        <button type="submit">Place Order</button>
-    </form>
-
-    <div id="bill" class="bill-box"></div>
-
-    <h2>Cart</h2>
-    <div id="cart"></div>
-    <h2>Payment</h2>
-
-<select id="paymentMethod">
-    <option value="">Select Payment Method</option>
-    <option>Cash</option>
-    <option>UPI</option>
-    <option>Card</option>
-</select>
-
-<button id="payBtn">Proceed to Pay</button>
-
-<div id="invoice" class="bill-box"></div>
-</div>
+<button id="checkoutBtn">Checkout</button>
 
 <script src="script.js"></script>
 </body>
